@@ -1,0 +1,20 @@
+﻿<div ng-controller="EditController">
+    <h3>Edit Employee</h3>
+    <form ng-submit="updateEmp()">
+        <div class="form-group">
+            <label for="name">Employee Name</label>
+            <input type="text" class="form-control input-lg" ng-model="employee.name" name="name" value="{{employee.Name}}" placeholder="Enter Employee Name"/>
+        </div>
+        
+        <div class="form-group">
+            <label for="salary">Employee Salary</label>
+            <input type="number" class="form-control input-lg" ng-model="employee.salary"  name="salary" value="{{employee.Salary}}" placeholder="Enter Employee Salary">
+        </div>
+        <div class="form-group">
+            <label for="age">Employee Age</label>
+            <input type="number"class="form-control input-lg" ng-model="employee.age" name="age" value="{{employee.Age}}"  placeholder="Enter Employee Age">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <a class="btn btn-danger" href="#/Home" class="btn btn-default">Cancel</a>
+    </form>
+</div>

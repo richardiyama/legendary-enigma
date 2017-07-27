@@ -1,0 +1,22 @@
+﻿
+<div ng-controller="AddController">
+    <h3>Add Employee</h3>
+    <form ng-submit="addEmp()">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" ng-model="name" name="name" placeholder="Employee Name">
+        </div>
+       
+        <div class="form-group">
+            <label for="salary">Salary</label>
+            <textarea class="form-control" ng-model="salary" name="salary" placeholder="Employee Salary"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <textarea class="form-control" ng-model="age" name="age" placeholder="Employee Age"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+        <a class="btn btn-danger" href="#/Home" class="btn btn-danger">Cancel</a>
+    </form>
+</div>

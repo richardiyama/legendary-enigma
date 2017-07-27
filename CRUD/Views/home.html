@@ -1,0 +1,49 @@
+﻿
+
+
+<div class="row">
+   <h1 class="text-center text-danger">Employees</h1>
+    <hr/>
+
+
+<div class="row">
+    <div class="col-md-9 col-md-offset-1">
+        <input type="text" placeholder="Type to filter here" class="input-lg form-control" ng-model="txtFilter"/>
+
+        <br />
+        <br />
+
+        <table class="table table-striped table-bordered">
+
+            <thead>
+                <tr>
+              <th>Name</th>
+               <th>Age</th>
+               <th>Salary</th>
+
+                </tr>
+
+            </thead>
+
+            <tr ng-repeat="employee in employees | filter:txtFilter">
+                <td>
+                    {{employee.Name}}
+                </td>
+                <td>
+                    {{employee.Age}}
+                </td>
+
+                <td>
+                    {{employee.Salary}}
+                </td>
+                <td><a class="btn btn-default" ng-href="#Edit/{{employee.ID}}">Edit Employee</a></td>
+           <td><a class="btn btn-danger" ng-href="#Delete/{{employee.ID}}">Delete</a></td>
+            </tr>
+
+
+        </table>
+
+    </div>
+</div>
+
+</div>

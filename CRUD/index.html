@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+     <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Service.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <script src="demo.js"></script>
+   
+   
+</head>
+<body>
+<div class="container">
+    <nav role="navigation" class="navbar navbar-inverse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#Home">Home</a></li>
+            <li><a href="#Add">Add</a></li>
+        </ul>
+
+    </nav>
+    </div>
+    
+        <div ng-view>
+
+        </div>
+        
+        <h3 style="margin-top:40px;" class="text-center text-info">Single Page App(Designed with Love By Richard Iyama)</h3>
+
+
+</body>
+</html>
