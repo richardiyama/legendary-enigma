@@ -1,9 +1,6 @@
-﻿
-//<reference path = "C:\Users\Richard Iyama\Documents\Visual Studio 2017\Projects\BluePrint\BluePrint\Scripts\angular.js" />
+﻿//<reference path = "C:\Users\Richard Iyama\Documents\Visual Studio 2017\Projects\BluePrint\BluePrint\Scripts\angular.js" />
 
 //<reference path = "C: \Users\Richard Iyama\Documents\Visual Studio 2017\Projects\BluePrint\BluePrint\Scripts\angular - route.js" />
-
-
 
 var myApp = angular.module("myApp", ['ngRoute']);
 myApp.config(['$routeProvider', "$locationProvider",
