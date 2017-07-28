@@ -14,8 +14,7 @@ using System.Web.Http.Cors;
 namespace CRUDWebApi.Controllers
 {
 
-   
-    public class EmployeeController : ApiController
+   public class EmployeeController : ApiController
     {
         private BluePrintWebApiContextDB db = new BluePrintWebApiContextDB();
 
